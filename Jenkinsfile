@@ -1,8 +1,8 @@
-pipeline {
+ pipeline {
    agent{
-     lable 'ansible-server'
+     label 'ansible-server'
    }
-  stages {
+   stages {
     stage ('deploy patch playbook') {
       steps {
         dir('/home/ec2-user/ansible-dev'){
@@ -11,3 +11,4 @@ pipeline {
     }
   }
 }
+    
